@@ -1,0 +1,17 @@
+name: Test Lowercase Action
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  lowercase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Run lowercase action
+        uses: ./
+        with:
+          text: "HELLO FROM GITHUB ACTION"

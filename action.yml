@@ -1,0 +1,10 @@
+name: 'Lowercase Action'
+description: 'Une action GitHub pour convertir du texte en minuscules'
+inputs:
+  text:
+    description: 'Le texte à convertir en minuscules'
+    required: true
+    default: 'HELLO WORLD'
+runs:
+  using: 'go'
+  main: 'main.go'
